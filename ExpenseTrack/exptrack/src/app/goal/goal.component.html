@@ -1,0 +1,48 @@
+<!-- goal.component.html -->
+<div class="container">
+    <h2>Goals</h2>
+  
+    <!-- Display list of goals -->
+    <div *ngIf="goals.length > 0">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Target Amount</th>
+            <th>User</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let goal of goals">
+            <td>{{ goal.name }}</td>
+            <td>{{ goal.targetAmount | currency }}</td>
+            <td>{{ goal.userId }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- Form to add new goal -->
+    <div class="mt-4">
+      <h4>Add New Goal</h4>
+      <form (submit)="addGoal()">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" [(ngModel)]="newGoal.name" name="name" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="targetAmount">Target Amount</label>
+          <input type="number" class="form-control" id="targetAmount" [(ngModel)]="newGoal.targetAmount" name="targetAmount" required min="1">
+        </div>
+  
+        <div class="form-group">
+          <label for="userId">User</label>
+          <input type="number" class="form-control" id="userId" [(ngModel)]="newGoal.userId" name="userId" placeholder="User ID" required>
+        </div>
+  
+        <button type="submit" class="btn btn-primary">Add Goal</button>
+      </form>
+    </div>
+  </div>
+  

@@ -1,0 +1,92 @@
+<!-- app.component.html -->
+<div class="container">
+  <!-- Header Section -->
+ <!-- app.component.html -->
+<!-- app.component.html -->
+<!-- app.component.html -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <!-- Brand / Logo -->
+    <a class="navbar-brand" href="#">Expense Tracker</a>
+    
+    <!-- Toggler for Mobile View -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/category" routerLinkActive="active">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/goal" routerLinkActive="active">Goals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/transaction" routerLinkActive="active">Transactions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/user" routerLinkActive="active">Users</a>
+        </li>
+      </ul>
+      
+      
+    </div>
+  </div>
+</nav>
+
+
+
+
+  <!-- The router-outlet will load the component based on the current route -->
+  <div class="mt-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+
+
+<!-- app.component.html
+<div class="container">
+ 
+  <header class="bg-primary text-white p-4 mb-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="mb-0">Expense Tracker</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/" routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/category" routerLinkActive="active">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/goal" routerLinkActive="active">Goals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/transaction" routerLinkActive="active">Transactions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/user" routerLinkActive="active">Users</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="home-screen">
+    <div class="container text-center">
+      <h2>Welcome to Expense Tracker</h2>
+      <p class="lead">Track your expenses, set financial goals, and manage your finances efficiently.</p>
+    </div>
+  </div>
+
+  The router-outlet will load the component based on the current route
+  <div class="mt-4">
+    <router-outlet></router-outlet>
+  </div>
+</div> -->
